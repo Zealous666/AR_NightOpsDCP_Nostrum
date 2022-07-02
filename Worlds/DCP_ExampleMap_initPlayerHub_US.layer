@@ -1339,166 +1339,6 @@ CommentEntity PlayerHub_US {
     }
    }
   }
-  SCR_SpawnPoint Base_Spawnpoint_US {
-   components {
-    Hierarchy "{59BAA22140816ACC}" {
-    }
-    NO_SCR_DTFRenamerComponent "{59BAA221496E242D}" {
-     m_sNewName "Base_Spawnpoint_US"
-    }
-    SCR_EditableEntityVisibilityChildComponent "{59BAA22140816ADA}" {
-     m_State ACTIVE
-    }
-    SCR_EditableSpawnPointComponent "{59BAA22140816A3D}" {
-     m_EntityType SYSTEM
-     m_UIInfo SCR_EditableDescriptorUIInfo "{59BAA22140816A7F}" {
-      Name "#AR-EditableEntity_SpawnPoint_Name"
-      Icon "{B3FBE7D84E42508A}UI/Textures/Editor/EditableEntities/Systems/EditableEntity_System_Respawn.edds"
-      m_Image "{831012F41EFE085A}UI/Textures/EditorPreviews/Auto/Systems/SpawnPoints/E_SpawnPoint_US.edds"
-      m_sFaction "US"
-      m_aAuthoredLabels {
-       7 11 30
-      }
-      m_aAutoLabels {
-       39
-      }
-      m_sNameFormat "#AR-EditableEntity_SpawnPoint_NameFormatted"
-     }
-     m_bAutoRegister ALWAYS
-     m_bStatic 1
-     m_Flags 32839
-    }
-    SCR_FactionControlComponent "{59BAA22140816BC9}" {
-     m_DefaultFaction "US"
-    }
-    SCR_MapDescriptorComponent "{59BAA22140816BE6}" {
-     VisibleOnMap 1
-     MainType Spawnpoint
-    }
-    SCR_SpawnPointAreaMeshComponent "{59BAA22140816B89}" {
-     m_vResolution 48
-     m_bStretchMaterial 1
-     m_Material "{0A8FAD171DB3DC49}Assets/Editor/VirtualArea/VirtualArea_01_Focused.emat"
-    }
-    RplComponent "{59BAA22140816B80}" {
-     "Self Insert" 0
-     Streamable Disabled
-    }
-   }
-   coords 15.126 -7.802 0.05
-   angleY -90
-   m_fSpawnRadius 5
-   m_fNoPlayerRadius 2
-   m_fNoSightRadius 0
-   m_sFaction "US"
-   m_Info SCR_UIInfo "{59BAA22140816B97}" {
-    Name "Base"
-   }
-   {
-    $grp SCR_Position {
-     SpawnPoint_Base_US_0 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords 11.005 0.05 20.572
-      angleY -136.788
-     }
-     SpawnPoint_Base_US_1 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords 13.56 0.054 20.911
-      angleY -137.414
-     }
-     SpawnPoint_Base_US_2 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords 15.703 0.047 20.445
-      angleY -131.096
-     }
-     SpawnPoint_Base_US_3 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords 14.833 0.017 17.528
-      angleY -39.262
-     }
-     SpawnPoint_Base_US_4 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords 10.254 0.025 17.776
-      angleY -129.838
-     }
-     SpawnPoint_Base_US_5 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords -16.481 0.061 17.83
-      angleY 43.705
-     }
-     SpawnPoint_Base_US_6 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords -13.807 0.045 17.647
-      angleY 43.079
-     }
-     SpawnPoint_Base_US_7 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords -11.417 0.025 17.659
-      angleY 49.397
-     }
-     SpawnPoint_Base_US_8 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords -15.682 0.025 20.508
-      angleY 124.384
-     }
-     SpawnPoint_Base_US_9 {
-      components {
-       Hierarchy "{59BA64836FB1B77A}" {
-       }
-       RplComponent "{59BA64836D05252D}" {
-       }
-      }
-      coords -10.571 0.016 20.338
-      angleY 124.384
-     }
-    }
-   }
-  }
   StaticModelEntity Tent_Medical_US : "{059125C8BBD5ECED}Prefabs/Compositions/Misc/SubCompositions/Tent_Medical_Cluttered_US_02.et" {
    coords 5.069 -7.801 -10.819
    angleY 180
@@ -3656,6 +3496,7 @@ CommentEntity PlayerHub_US {
        m_sNewName "Infil_TP_Point_US"
       }
       NwkMovementComponent "{59B6053BA17C1819}" {
+       HierarchySync 1
       }
       RplComponent "{59B6053BA41F0A9D}" {
        Streamable Disabled
@@ -5149,6 +4990,125 @@ GenericEntity Infil_Bivouac_US : "{3BA9D94C4EE9B33B}Prefabs/Compositions/Slotted
    }
    coords 4.609 0 4.335
    angleY -27.621
+  }
+ }
+}
+SCR_SpawnPoint Base_Spawnpoint_US : "{E7F4D5562F48DDE4}Prefabs/MP/Spawning/SpawnPoint_Base.et" {
+ components {
+  NO_SCR_DTFRenamerComponent "{59C539DC9D37B6DE}" {
+   m_sNewName "Base_Spawnpoint_US"
+  }
+ }
+ coords 267.964 10 117.867
+ angleY -90
+ m_fSpawnRadius 5
+ m_sFaction "US"
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Base"
+  Icon "{46FB2FB2C2125A3C}UI/Textures/Flags/US-flag-base-3it.edds"
+ }
+ {
+  $grp SCR_Position {
+   SpawnPoint_Base_US_0 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords 11.005 0.05 20.572
+    angleY -136.788
+   }
+   SpawnPoint_Base_US_1 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords 13.56 0.054 20.911
+    angleY -137.414
+   }
+   SpawnPoint_Base_US_2 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords 15.703 0.047 20.445
+    angleY -131.096
+   }
+   SpawnPoint_Base_US_3 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords 14.833 0.017 17.528
+    angleY -39.262
+   }
+   SpawnPoint_Base_US_4 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords 10.254 0.025 17.776
+    angleY -129.838
+   }
+   SpawnPoint_Base_US_5 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords -16.481 0.061 17.83
+    angleY 43.705
+   }
+   SpawnPoint_Base_US_6 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords -13.807 0.045 17.647
+    angleY 43.079
+   }
+   SpawnPoint_Base_US_7 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords -11.417 0.025 17.659
+    angleY 49.397
+   }
+   SpawnPoint_Base_US_8 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords -15.682 0.025 20.508
+    angleY 124.384
+   }
+   SpawnPoint_Base_US_9 {
+    components {
+     Hierarchy "{59BA64836FB1B77A}" {
+     }
+     RplComponent "{59BA64836D05252D}" {
+     }
+    }
+    coords -10.571 0.016 20.338
+    angleY 124.384
+   }
   }
  }
 }

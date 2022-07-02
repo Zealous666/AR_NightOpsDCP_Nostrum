@@ -39,6 +39,7 @@ NO_SCR_MissionTrigger Exfil_Trigger_US : "{52FA44EBEB3115FC}Prefabs/MP/Triggers/
   SCR_Position Exfil_TP_Point_US : "{68C0C31F6FAD7C2E}Prefabs/MP/NO_MissionTriggerPortPos.et" {
    components {
     NwkMovementComponent "{59B6053BBCB0CB5F}" {
+     HierarchySync 1
     }
     RplComponent "{59B6053BB0EA6908}" {
      Streamable Disabled

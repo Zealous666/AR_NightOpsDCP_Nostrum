@@ -5,7 +5,7 @@ $grp GenericEntity {
     m_rnDefaultPrefabs {
      CountSpawnsByOnlinePlayer "{59BB4D71E107EBD6}" {
       prefab {
-       "{6FFB8B57C9BD2A40}Prefabs/Groups/Group_USSR_HVT.et"
+       "{6FFB8B57C9BD2A40}Prefabs/Groups/Group_USSR_HVT.et" "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
       }
      }
     }
@@ -31,6 +31,25 @@ $grp GenericEntity {
    }
   }
   coords 224.278 10.001 357.836
+ }
+ Guards_Spawner_US {
+  components {
+   NO_SCR_AISpawnerComponent "{59BB4D762A42452B}" {
+    m_bShouldStack 1
+    m_rnDefaultPrefabs {
+     CountSpawnsByOnlinePlayer "{59BB4D71E107EBD6}" {
+      CountOfPlayers 1
+      prefab {
+       "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
+      }
+     }
+    }
+    m_bIgnoreSpawnManagerAndUsePrefabs 1
+   }
+   RplComponent "{59BB4D762FD0FD85}" {
+   }
+  }
+  coords 127.277 10.001 239.826
  }
 }
 NO_SCR_PatrolManager PatrolManager : "{0BE9B477CC47109E}Prefabs/DCP/PatrolManager.et" {
@@ -58,11 +77,11 @@ NO_SCR_MissionTrigger Exfil_Trigger_US : "{52FA44EBEB3115FC}Prefabs/MP/Triggers/
  m_fDelay 1
  m_aSpawnpointChanges {
   NO_SCR_SpawnpointChangeEntry "{59B49400D5781250}" {
-   m_sSpawnpointName "SpawnPoint_Base_US"
+   m_sSpawnpointName "Base_Spawnpoint_US"
    m_sFactionKey "US"
   }
   NO_SCR_SpawnpointChangeEntry "{59B49400D59025A5}" {
-   m_sSpawnpointName "infil_spawnpoint"
+   m_sSpawnpointName "Infil_Spawnpoint_US"
   }
  }
  m_bEnableTeleport 1
@@ -140,6 +159,20 @@ $grp GenericEntity : "{D8F00B5CFC8514F1}Prefabs/NO_DSF/Vehicles/SpawnVehicle.et"
    }
   }
   coords 254.671 10.001 104.108
+ }
+ FOB_Spawner_US {
+  components {
+   NO_SCR_EnvSpawnerComponent "{59889B90E04F5D80}" {
+    m_rnDefaultPrefabs {
+     CountSpawnsByOnlinePlayer "{5988C249449C6C74}" {
+      prefab {
+       "{662518B701F0A3BF}Prefabs/DCP/Compositions/Infil_Bivouac_US.et"
+      }
+     }
+    }
+   }
+  }
+  coords 360.064 10.001 139.823
  }
 }
 SCR_SpawnPoint Infil_Spawnpoint_US : "{E7F4D5562F48DDE4}Prefabs/MP/Spawning/SpawnPoint_Base.et" {

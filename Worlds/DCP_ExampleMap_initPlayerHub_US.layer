@@ -745,7 +745,7 @@ CommentEntity PlayerHub_US {
           Enabled 1
          }
         }
-        coords -4.806 -0 -4.166
+        coords -4.806 0 -4.166
         angleY 157.33
        }
        {
@@ -757,7 +757,7 @@ CommentEntity PlayerHub_US {
           Enabled 1
          }
         }
-        coords -5.484 -0 -1.131
+        coords -5.484 0 -1.131
         angleY -179.581
        }
        {
@@ -1059,7 +1059,7 @@ CommentEntity PlayerHub_US {
          RplComponent "{59BC9CAF886577B0}" {
          }
         }
-        coords -6.07 -0 -2.089
+        coords -6.07 0 -2.089
         angleX -89.966
         angleY 45.005
         angleZ 44.995
@@ -3637,10 +3637,10 @@ CommentEntity PlayerHub_US {
    }
    m_aSpawnpointChanges {
     NO_SCR_SpawnpointChangeEntry "{59B49400D5781250}" {
-     m_sSpawnpointName "SpawnPoint_Base_US"
+     m_sSpawnpointName "Base_Spawnpoint_US"
     }
     NO_SCR_SpawnpointChangeEntry "{59B49400D59025A5}" {
-     m_sSpawnpointName "infil_spawnpoint"
+     m_sSpawnpointName "Infil_Spawnpoint_US"
      m_sFactionKey "US"
     }
    }

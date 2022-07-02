@@ -40,7 +40,7 @@ NO_SCR_PatrolArea Example_Town_Name : "{1F98480F3F898EDC}Prefabs/DCP/PatrolArea.
    m_eMarkerType EXFIL
   }
   NO_SCR_PatrolMarker : "{95C57EAEC4CFC838}Prefabs/DCP/Markers/INFIL.et" {
-   coords 2.178 -5.658 -26.167
+   coords -12.757 -5.658 -55.658
    m_eMarkerType INFIL
   }
  }

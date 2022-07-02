@@ -1,16 +1,16 @@
 Layer default {
  Index 0
 }
-Layer BiscSpawnedTasks {
+Layer DCP_SpawnedTasks {
  Index 6
 }
 Layer initCombatPatrol {
  Index 2
 }
-Layer BiscGeneral {
+Layer DCP_PatrolManagement {
  Index 4
 }
-Layer BiscPatrolAreas {
+Layer DCP_PatrolAreas {
  Index 3
 }
 Layer initPlayerHub_US {

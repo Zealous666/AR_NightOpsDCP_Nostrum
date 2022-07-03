@@ -13,6 +13,6 @@ Layer DCP_PatrolManagement {
 Layer DCP_PatrolAreas {
  Index 3
 }
-Layer initPlayerHub_US {
+Layer DCP_Faction_US {
  Index 5
 }

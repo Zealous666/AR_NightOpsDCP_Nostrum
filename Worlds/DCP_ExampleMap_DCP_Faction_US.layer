@@ -185,7 +185,7 @@ $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure
     m_rnDefaultPrefabs {
      CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
       prefab {
-       "{BD6239BCA2005E10}Prefabs/DCP/Compositions/PlayerHub_US.et"
+       "{CEF40FF9DD9E2884}Prefabs/DCP/Compositions/PlayerHub_US_Fixed.et"
       }
      }
     }

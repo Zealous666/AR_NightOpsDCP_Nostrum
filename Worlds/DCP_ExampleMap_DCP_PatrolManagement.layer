@@ -1,4 +1,4 @@
-NO_SCR_PatrolManager PatrolManager : "{0BE9B477CC47109E}Prefabs/DCP/PatrolManager.et" {
+NO_SCR_DCP_PatrolManager PatrolManager : "{0BE9B477CC47109E}Prefabs/DCP/PatrolManager.et" {
  coords 293.523 10.001 112.94
  m_pCombatPatrolsConfig NO_SCR_CombatPatrolsConfig "{59B909006927F5A1}" : "{F40BF4F2BEAB2A2F}Configs/DynamicCombatPatrols.conf" {
  }

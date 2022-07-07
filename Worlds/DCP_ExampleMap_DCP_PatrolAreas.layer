@@ -41,6 +41,7 @@ NO_SCR_DCP_PatrolArea Example_Town_Name : "{1F98480F3F898EDC}Prefabs/DCP/PatrolA
   }
   NO_SCR_DCP_PatrolMarker : "{95C57EAEC4CFC838}Prefabs/DCP/Markers/INFIL.et" {
    coords -12.757 -5.658 -55.658
+   angleY 18.459
    m_eMarkerType INFIL
   }
  }

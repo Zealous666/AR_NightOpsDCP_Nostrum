@@ -1,10 +1,10 @@
 Layer default {
  Index 0
 }
-Layer DCP_SpawnedTasks {
- Index 6
+Layer DCP_Faction_US {
+ Index 5
 }
-Layer initCombatPatrol {
+Layer DCP_General {
  Index 2
 }
 Layer DCP_PatrolManagement {
@@ -12,7 +12,4 @@ Layer DCP_PatrolManagement {
 }
 Layer DCP_PatrolAreas {
  Index 3
-}
-Layer DCP_Faction_US {
- Index 5
 }

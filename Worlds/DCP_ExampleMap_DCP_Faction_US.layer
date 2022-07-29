@@ -1,56 +1,97 @@
-NO_SCR_MissionTrigger Exfil_Trigger_US : "{52FA44EBEB3115FC}Prefabs/MP/Triggers/NO_MissionTrigger.et" {
- SphereRadius 4.5
- ShapeColor 0.624 0.235 0.235 1
- OnPlayerQuotaReached ""\
- "		super.OnPlayerQuotaReached();"\
- ""\
- "		if (GetPatrolManager())"\
- "			GetPatrolManager().FinishCurrentPatrol();"\
- "	"
- m_bIsActive 0
- m_aActivateOnTaskState {
-  NO_SCR_TaskStateActivatorEntry "{59BA16E5CEF842CF}" {
-   m_sTaskEntityName "EndPatrol_Task"
-   m_eTaskState Assign
-  }
- }
- m_bIsRepeatable 1
- m_fDelay 1
- m_aSpawnpointChanges {
-  NO_SCR_SpawnpointChangeEntry "{59B49400D5781250}" {
-   m_sSpawnpointName "Base_Spawnpoint_US"
-   m_sFactionKey "US"
-  }
-  NO_SCR_SpawnpointChangeEntry "{59B49400D59025A5}" {
-   m_sSpawnpointName "Infil_Spawnpoint_US"
-  }
- }
- m_bEnableTeleport 1
- m_pCustomHint SCR_HintUIInfo "{59B4940328F39EC8}" {
-  Name "Exit Combat Patrol"
-  Description "Returning To Base"
- }
- {
-  SCR_Position Exfil_TP_Point_US : "{68C0C31F6FAD7C2E}Prefabs/MP/NO_MissionTriggerPortPos.et" {
-   components {
-    NwkMovementComponent "{59B6053BBCB0CB5F}" {
-     HierarchySync 1
-    }
-    RplComponent "{59B6053BB0EA6908}" {
-     Streamable Disabled
-    }
+$grp NO_SCR_MissionTrigger : "{52FA44EBEB3115FC}Prefabs/MP/Triggers/NO_MissionTrigger.et" {
+ Exfil_Trigger_US {
+  components {
+   NwkMovementComponent "{59FB52DFB3A0B341}" {
    }
-   coords 0 0 0
-   angleY 0
+  }
+  SphereRadius 4.5
+  ShapeColor 0.624 0.235 0.235 1
+  m_bIsActive 0
+  m_aActivateOnTaskState {
+   NO_SCR_TaskStateActivatorEntry "{59BA16E5CEF842CF}" {
+    m_sTaskEntityName "EndPatrol_Task_US"
+    m_eTaskState Assign
+   }
+  }
+  m_bIsRepeatable 1
+  m_fDelay 1
+  m_aSpawnpointChanges {
+   NO_SCR_SpawnpointChangeEntry "{59B49400D5781250}" {
+    m_sSpawnpointName "Base_Spawnpoint_US"
+    m_sFactionKey "US"
+   }
+   NO_SCR_SpawnpointChangeEntry "{59B49400D59025A5}" {
+    m_sSpawnpointName "Infil_Spawnpoint_US"
+   }
+  }
+  m_bEnableTeleport 1
+  m_pCustomHint SCR_HintUIInfo "{59B4940328F39EC8}" {
+   Name "Exit Combat Patrol"
+   Description "Returning To Base"
+  }
+  {
+   SCR_Position Exfil_TP_Point_US : "{68C0C31F6FAD7C2E}Prefabs/MP/NO_MissionTriggerPortPos.et" {
+    components {
+     NwkMovementComponent "{59B6053BBCB0CB5F}" {
+      HierarchySync 1
+     }
+     RplComponent "{59B6053BB0EA6908}" {
+      Streamable Disabled
+     }
+    }
+    coords 0 0 0
+    angleY 0
+   }
+  }
+ }
+ Infil_Trigger_US {
+  components {
+  }
+  coords 267.964 10.003 117.867
+  angleY -90
+  SphereRadius 4.5
+  ShapeColor 0.188 0.745 0.745 0.498
+  m_bIsActive 0
+  m_bIsRepeatable 1
+  m_fDelay 1
+  m_aTaskStateChanges {
+   NO_SCR_TaskStateChangeEntry "{59B4941EFEB4E0E6}" {
+    m_sTaskEntityName "StartPatrol_Task_US"
+   }
+  }
+  m_aSpawnpointChanges {
+   NO_SCR_SpawnpointChangeEntry "{59B49400D5781250}" {
+    m_sSpawnpointName "Base_Spawnpoint_US"
+   }
+   NO_SCR_SpawnpointChangeEntry "{59B49400D59025A5}" {
+    m_sSpawnpointName "Infil_Spawnpoint_US"
+    m_sFactionKey "US"
+   }
+  }
+  m_bEnableTeleport 1
+  m_pCustomHint SCR_HintUIInfo "{59B4940328F39EC8}" {
+   Name "Start Combat Patrol"
+   Description " "
+  }
+  {
+   SCR_Position Infil_TP_Point_US : "{68C0C31F6FAD7C2E}Prefabs/MP/NO_MissionTriggerPortPos.et" {
+    components {
+     NwkMovementComponent "{59B6053BA17C1819}" {
+      HierarchySync 1
+     }
+     RplComponent "{59B6053BA41F0A9D}" {
+      Streamable Disabled
+     }
+    }
+    coords 0 0 0
+    angleY 0
+   }
   }
  }
 }
 $grp SCR_SpawnPoint : "{E7F4D5562F48DDE4}Prefabs/MP/Spawning/SpawnPoint_Base.et" {
  Base_Spawnpoint_US {
   components {
-   NO_SCR_DTFRenamerComponent "{59C539DC9D37B6DE}" {
-    m_sNewName "Base_Spawnpoint_US"
-   }
   }
   coords 267.964 10 117.867
   angleY -90

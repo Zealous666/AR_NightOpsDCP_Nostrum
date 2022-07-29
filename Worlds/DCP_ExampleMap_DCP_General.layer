@@ -132,14 +132,6 @@ SCR_BaseGameMode : "{986C258C450B9319}Prefabs/MP/Modes/Coop/GameMode_Coop.et" {
   }
  }
 }
-NO_SCR_TaskManager NO_TaskManager : "{2DF590FC1A531940}Prefabs/NO_DTF/TaskManager.et" {
- components {
-  NO_SCR_TaskMarkerComponent "{59953E07BC53E919}" {
-   m_Color 0.523 0.042 1 1
-  }
- }
- coords 284.421 10 129.933
-}
 NO_SCR_SpawnManager NO_SpawnManager : "{BC4EF3F0E9688AE2}Prefabs/NO_DSF/MP/Managers/SpawnManager.et" {
  coords 277.237 9.739 112.848
 }
